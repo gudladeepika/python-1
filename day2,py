@@ -1,3 +1,4 @@
+########## 3D prime number
 for num in range(100,1000):
   c=0
   for i in range(2, num):
