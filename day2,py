@@ -6,3 +6,59 @@ for num in range(100,1000):
             c=c+1
   if c==0:
          print(num, end=" ")
+
+#####
+a=10
+for i in range(4):
+  for j in range(i+1):
+    a=a+i
+  print("ACE")
+print(a)
+#####
+a=2
+for i in range(2,5):
+  a=a+2
+  for j in range(4):
+    a=a+3
+  print(a)
+
+##########
+for i in range(5):
+    for j in range(5):
+        print("kohn",end=" ")
+    print()
+#######
+from datetime import date
+a=date(2006,5,28)
+b=date(2026,4,28)
+b - a
+print("no of days she lived: ",(b-a).days)
+####
+import calendar
+a=int(input("enter year: "))
+b=int(input("enter month: "))
+res=(calendar.month(a,b))
+print(res)
+########
+
+#a poultry farm has group of hens and cows..
+#need to find num of cows and hens separatly ,
+#if total legs &total heads together given :
+# testcase 1: legs: 16
+              #heads: 6
+              #cows =2
+              #hens =4
+legs =int(input("enter no of legs: "))
+heads =int(input("enter no of heads: "))
+flag=False
+for cows in range(0,heads + 1):
+    hens = heads - cows
+    cal_legs=cows*4 + hens*2
+    if cal_legs==legs: 
+        flag=True
+        break
+if flag:
+        print("cows =", cows)
+        print("hens =", hens)
+else:
+  print("no solution ")
