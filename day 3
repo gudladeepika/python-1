@@ -1,0 +1,52 @@
+from datetime import datetime
+import pytz
+a=pytz.timezone("Asia/Tokyo") # Corrected timezone name
+b=datetime.now(a) # Corrected 'datatime' to 'datetime'
+print(b)
+
+  ###########
+  import time
+import sys # Added import for sys module
+h=1
+m=2
+s=0
+while True:
+    sys.stdout.write("\r{:02d} : {:02d} : {:02d}".format(h,m,s)) # Corrected format string
+    sys.stdout.flush()
+    time.sleep(1)
+    s=s+1
+    if s==60:
+        s=0
+        m=m+1
+    if m==60:
+        m=0
+        h=h+1
+    if h==12: # Corrected indentation
+        h=0
+
+  #########
+  import time
+print("\033[1;33m")
+for i in range(1,11):
+  time.sleep(2)
+  for j in range(1,11):
+    print("{:02d}".format(i*j),end=" ")
+  print()
+
+  ############
+  a=3
+print("{:02d}",format(a))
+  #########
+  a=int(input("enter no og rows: "))
+for i in range(a):
+  for j in range(i+1):
+    print("*",end=" ")
+  print()
+
+  ##########
+  a=10
+for i in range(2,7,2):
+  for j in range (3):
+      a=a+i
+  a=a+2
+print(a)
