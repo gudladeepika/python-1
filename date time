@@ -1,0 +1,10 @@
+for i in range(5):
+    for j in range(5):
+        print("kohn",end=" ")
+    print()
+#######
+from datetime import date
+a=date(2006,5,28)
+b=date(2026,4,28)
+b - a
+print("no of days she lived: ",(b-a).days)
