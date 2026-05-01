@@ -1,0 +1,5 @@
+names=["deepu","janu","pavi","vamshi","jashu"]
+marks=[[1,2,4], [3,3,2], [4,3,5], [5,5,3], [5,5,2]]
+for i in range(len(names)):
+  a=sum(marks[i])//len(marks[i])
+  print("{}. {} has scored {}".format(i+1,names[i],a))
