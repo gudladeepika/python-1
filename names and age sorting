@@ -1,0 +1,7 @@
+names=["deepu","rahul","varsha","krishna","ram"]
+age=[34,65,23,56,54,]
+res=list(zip(names,age))
+res1=sorted(res,reverse=True)
+p=1
+for i in res1:
+  print(i)
