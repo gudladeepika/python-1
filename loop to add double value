@@ -1,0 +1,7 @@
+a=[23,34,45,56,["rose","orange","dark"]]
+j=0
+for i in range(len(a)):
+  if j == len(a[4]):
+    break
+  print(a[4][j] * 2)
+  j = j + 1
